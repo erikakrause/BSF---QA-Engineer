@@ -1,0 +1,27 @@
+Parecer Técnico
+
+Usabilidade:
+
+Avaliação da navegação para encontrar informações importantes como vagas, perfil do usuário e configurações.
+Verificação do design intuitivo e organização dos elementos visuais.
+Teste de responsividade em diferentes dispositivos e tamanhos de tela.
+Funcionalidade:
+
+Teste da funcionalidade de busca de vagas para precisão e relevância dos resultados.
+Verificação da facilidade e validação correta no processo de registro e login de usuários.
+Teste do processo de envio de currículos para assegurar funcionalidade sem falhas.
+Desempenho:
+
+Medição do tempo de carregamento da página em diversas condições de rede.
+Avaliação da estabilidade da página para identificar possíveis problemas de lentidão ou falhas.
+Segurança:
+
+Verificação da proteção adequada dos dados dos usuários.
+Garantia de conexão segura através de HTTPS e criptografia apropriada.
+Compatibilidade:
+
+Teste de compatibilidade em diferentes navegadores populares.
+Verificação do funcionamento correto em dispositivos móveis e desktops.
+Acessibilidade:
+
+Verificação da conformidade com as diretrizes de acessibilidade WCAG para garantir uso inclusivo por todos os usuários.
