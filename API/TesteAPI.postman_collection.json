@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "d1b9300a-b9f1-41f7-ac10-b898367a76ab",
+		"name": "TesteAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Inserir novo usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Daniel Melo\",\r\n  \"email\": \"daniel@chefe.com\",\r\n  \"password\": \"Daniel\",\r\n  \"administrador\": \"false\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serverest.dev/usuarios",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localizar usuário cadastrado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serverest.dev/usuarios?_id=2ql6MzBdWx8u5A6U",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"usuarios"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "2ql6MzBdWx8u5A6U"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir novo usuário admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Bemol\",\r\n  \"email\": \"Bemol@Bemol.com\",\r\n  \"password\": \"Bemol123\",\r\n  \"administrador\": \"true\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serverest.dev/usuarios",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Bemol@bemol.com\",\r\n    \"password\": \"Bemol123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serverest.dev/login",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir Produto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkJlbW9sQEJlbW9sLmNvbSIsInBhc3N3b3JkIjoiQmVtb2wxMjMiLCJpYXQiOjE2MTQxOTM3OTksImV4cCI6MTYxNDE5NDM5OX0.Z4M5epu7AV47_Q_N9XpRAR-XqoJTlK6vsmWmEpD75xg",
+						"description": "Autorização ao login",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Xiaomi Poco X3\",\r\n  \"preco\": \"1800\",\r\n  \"descricao\": \"Um dos melhores smartphones da atualidade\",\r\n  \"quantidade\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serverest.dev/produtos",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Localizar produto cadastrado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"r1n8AIBdduD83wdk\",\r\n    \"nome\": \"Xiaomi Poco X3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serverest.dev/produtos?_id=r1n8AIBdduD83wdk",
+					"protocol": "https",
+					"host": [
+						"serverest",
+						"dev"
+					],
+					"path": [
+						"produtos"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "r1n8AIBdduD83wdk"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
